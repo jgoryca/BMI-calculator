@@ -1,0 +1,38 @@
+.limitations {
+  padding: 0 2.4rem;
+  &-intro {
+    text-align: center;
+    margin-top: 7.2rem;
+    margin-bottom: 5.6rem;
+
+    & .heading-l {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+    margin-bottom: 9.6rem;
+  }
+
+  &-box {
+    padding: 2.4rem;
+    border: 1px solid $color-grey-light;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 4rem #d6e6fe;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}

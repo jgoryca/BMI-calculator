@@ -24,7 +24,7 @@ body {
   line-height: 1.1; }
 
 .heading-l {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.1; }
 
@@ -43,7 +43,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.4rem;
+  padding: 0 2.4rem;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem; }
 
@@ -60,3 +60,59 @@ header {
 .heading-box {
   text-align: center;
   margin-bottom: 21.7rem; }
+
+.limitations {
+  padding: 0 2.4rem; }
+  .limitations-intro {
+    text-align: center;
+    margin-top: 7.2rem;
+    margin-bottom: 5.6rem; }
+    .limitations-intro .heading-l {
+      margin-bottom: 3.2rem; }
+  .limitations-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+    margin-bottom: 9.6rem; }
+  .limitations-box {
+    padding: 2.4rem;
+    border: 1px solid #d8e2e7;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 4rem #d6e6fe; }
+    .limitations-box-title {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 1.6rem; }
+  .limitations-icon {
+    width: 3.2rem;
+    height: 3.2rem; }
+
+.result {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; }
+  .result-photo {
+    width: 100%; }
+  .result-text {
+    margin-top: 4.8rem;
+    margin-bottom: 7.1rem;
+    padding: 2.4rem; }
+    .result-text .heading-l {
+      margin-bottom: 3.2rem; }
+
+.tips {
+  background-image: linear-gradient(to right, #fff 10%, #eff6f9);
+  padding: 2.4rem; }
+  .tips-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem; }
+    .tips-box:not(:last-child) {
+      margin-bottom: 4rem; }
+    .tips-box:last-child {
+      margin-bottom: 5.6rem; }
+  .tips-icon {
+    width: 6.4rem;
+    height: 6.4rem;
+    display: inline-block; }

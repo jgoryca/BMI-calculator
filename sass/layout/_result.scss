@@ -1,0 +1,19 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  &-photo {
+    width: 100%;
+  }
+
+  &-text {
+    margin-top: 4.8rem;
+    margin-bottom: 7.1rem;
+    padding: 2.4rem;
+
+    & .heading-l {
+      margin-bottom: 3.2rem;
+    }
+  }
+}
