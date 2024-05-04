@@ -33,13 +33,51 @@
     </header>
     <div class="calculator">
       <h3 class="heading-m">Enter your details below</h3>
-      Metric Imperial Height Weight Your BMI is...
+      <form action="" class="form form-metric">
+        <div class="form-radio">
+          <div class="form-radio-group">
+            <input
+              type="radio"
+              class="form-radio-input"
+              id="metric"
+              name="system"
+            />
+            <label for="metric" class="form-radio-label">
+              <span class="form-radio-button"></span>
+              Metric
+            </label>
+          </div>
+          <div class="form-radio-group">
+            <input
+              type="radio"
+              class="form-radio-input"
+              id="imperial"
+              name="system"
+            />
+            <label for="imperial" class="form-radio-label">
+              <span class="form-radio-button"></span>
+              Imperial
+            </label>
+          </div>
+        </div>
+        <div class="form-metric">
+          <label for="metric-height" class="form-metric-label">Height</label>
+          <input type="text" id="metric-height" class="form-metric-input" />
+          <label for="metric-weight" class="form-metric-label">Weight</label>
+          <input type="text" id="metric-weight" class="form-metric-input" />
+        </div>
+        <!-- <div class="form-imperial">
+          Height Weight
+        </div> -->
+      </form>
 
-      <!-- add score -->
-
-      Your BMI suggests you're
-      <!-- add classification -->. Your ideal weight is between
-      <!-- add range -->.
+      <div class="score">
+        Your BMI is...
+        <!-- add score -->
+        Your BMI suggests you're
+        <!-- add classification -->. Your ideal weight is between
+        <!-- add range -->.
+      </div>
     </div>
     <div class="result">
       <img

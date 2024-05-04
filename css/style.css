@@ -31,12 +31,83 @@ body {
 .heading-m {
   font-size: 2.4rem;
   font-weight: 600;
-  line-height: 1.1; }
+  line-height: 1.1;
+  letter-spacing: -0.5px; }
 
 .heading-s {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.1; }
+
+.calculator {
+  background-color: #fff;
+  margin: 2.4rem;
+  padding: 2.4rem;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem #d6e6fe; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+  .form-radio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .form-radio-label {
+      font-size: 2rem;
+      cursor: pointer;
+      position: relative;
+      padding-left: 4.8rem; }
+    .form-radio-button {
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid #d8e2e7;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: -0.1rem; }
+      .form-radio-button::after {
+        content: "";
+        display: block;
+        height: 1.2rem;
+        width: 1.2rem;
+        background-color: #345ff6;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.2s; }
+    .form-radio-input {
+      display: none; }
+    .form-radio-input:checked ~ .form-radio-label .form-radio-button {
+      background-color: #d6e6fe; }
+    .form-radio-input:checked ~ .form-radio-label .form-radio-button::after {
+      opacity: 1; }
+  .form-metric-label {
+    display: block;
+    margin-bottom: 0.8rem; }
+  .form-metric-input {
+    display: block;
+    width: 100%;
+    height: 6.9rem;
+    border: 1px solid #d8e2e7;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.6rem; }
+
+.score {
+  background-color: #345ff6;
+  margin-top: 0.8rem;
+  padding: 3.2rem;
+  border-radius: 10px; }
 
 header {
   background-image: linear-gradient(to right bottom, #fff 15%, #d6e6fe);
