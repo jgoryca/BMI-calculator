@@ -9,7 +9,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
+
+.hidden {
+  display: none; }
 
 body {
   font-family: "Inter", sans-serif;
@@ -48,7 +52,9 @@ body {
   flex-direction: column;
   gap: 2.4rem;
   border-radius: 10px;
-  box-shadow: 0 2rem 4rem #d6e6fe; }
+  box-shadow: 0 2rem 4rem #d6e6fe;
+  position: absolute;
+  top: 45rem; }
 
 .form {
   display: flex;
@@ -101,13 +107,109 @@ body {
     border: 1px solid #d8e2e7;
     border-radius: 10px;
     padding: 2rem;
+    padding-right: 6rem;
     margin-bottom: 1.6rem; }
+  .form-imperial-label {
+    display: block;
+    margin-bottom: 0.8rem; }
+  .form-imperial-input {
+    display: block;
+    width: 100%;
+    height: 6.9rem;
+    border: 1px solid #d8e2e7;
+    border-radius: 10px;
+    padding: 2rem;
+    padding-right: 5rem;
+    margin-bottom: 1.6rem; }
+  .form-imperial-inputs-row {
+    display: flex;
+    justify-content: space-between; }
+
+#label-cm,
+#label-kg,
+#label-ft,
+#label-in,
+#label-st,
+#label-lbs {
+  position: relative;
+  display: block; }
+
+#label-ft,
+#label-in,
+#label-st,
+#label-lbs {
+  width: 47%; }
+
+#label-cm::after {
+  content: "cm";
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #345ff6; }
+
+#label-kg::after {
+  content: "kg";
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #345ff6; }
+
+#label-ft::after {
+  content: "ft";
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #345ff6; }
+
+#label-in::after {
+  content: "in";
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #345ff6; }
+
+#label-st::after {
+  content: "st";
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #345ff6; }
+
+#label-lbs::after {
+  content: "lbs";
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #345ff6; }
 
 .score {
   background-color: #345ff6;
   margin-top: 0.8rem;
   padding: 3.2rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  color: #d8e2e7; }
+
+#BMI-score {
+  display: block;
+  font-size: 4.8rem;
+  font-weight: 600; }
+
+#BMI-range {
+  font-size: 2rem;
+  font-weight: 600; }
 
 header {
   background-image: linear-gradient(to right bottom, #fff 15%, #d6e6fe);
@@ -147,9 +249,8 @@ header {
     margin-bottom: 9.6rem; }
   .limitations-box {
     padding: 2.4rem;
-    border: 1px solid #d8e2e7;
     border-radius: 1rem;
-    box-shadow: 0 2rem 4rem #d6e6fe; }
+    box-shadow: 0 1rem 2rem #d6e6fe; }
     .limitations-box-title {
       display: flex;
       align-items: center;
@@ -162,7 +263,8 @@ header {
 .result {
   display: flex;
   flex-direction: column;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-top: 50rem; }
   .result-photo {
     width: 100%; }
   .result-text {

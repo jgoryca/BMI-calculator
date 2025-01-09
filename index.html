@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | Body Mass Index Calculator</title>
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -33,7 +34,7 @@
     </header>
     <div class="calculator">
       <h3 class="heading-m">Enter your details below</h3>
-      <form action="" class="form form-metric">
+      <form action="" class="form">
         <div class="form-radio">
           <div class="form-radio-group">
             <input
@@ -41,6 +42,7 @@
               class="form-radio-input"
               id="metric"
               name="system"
+              checked
             />
             <label for="metric" class="form-radio-label">
               <span class="form-radio-button"></span>
@@ -62,21 +64,71 @@
         </div>
         <div class="form-metric">
           <label for="metric-height" class="form-metric-label">Height</label>
-          <input type="text" id="metric-height" class="form-metric-input" />
+          <label id="label-cm">
+            <input
+              type="number"
+              id="metric-height"
+              class="form-metric-input heading-m"
+            />
+          </label>
           <label for="metric-weight" class="form-metric-label">Weight</label>
-          <input type="text" id="metric-weight" class="form-metric-input" />
+          <label id="label-kg">
+            <input
+              type="number"
+              id="metric-weight"
+              class="form-metric-input heading-m"
+            />
+          </label>
         </div>
-        <!-- <div class="form-imperial">
-          Height Weight
-        </div> -->
+        <div class="form-imperial hidden">
+          <label for="imperial-height-row" class="form-imperial-label"
+            >Height</label
+          >
+          <div class="form-imperial-inputs-row imperial-height-row">
+            <label id="label-ft">
+              <input
+                type="number"
+                id="imperial-height-ft"
+                class="form-imperial-input heading-m"
+              />
+            </label>
+            <label id="label-in">
+              <input
+                type="number"
+                id="imperial-height-in"
+                class="form-imperial-input heading-m"
+              />
+            </label>
+          </div>
+          <label for="imperial-weight-row" class="form-imperial-label"
+            >Weight</label
+          >
+          <div class="form-imperial-inputs-row imperial-weight-row">
+            <label id="label-st">
+              <input
+                type="number"
+                id="imperial-weight-st"
+                class="form-imperial-input heading-m"
+              />
+            </label>
+            <label id="label-lbs">
+              <input
+                type="number"
+                id="imperial-weight-lbs"
+                class="form-imperial-input heading-m"
+              />
+            </label>
+          </div>
+        </div>
       </form>
 
       <div class="score">
-        Your BMI is...
-        <!-- add score -->
+        <h5 class="heading-s">Your BMI is...</h5>
+        <p id="BMI-score"></p>
         Your BMI suggests you're
-        <!-- add classification -->. Your ideal weight is between
-        <!-- add range -->.
+        <span id="BMI-rate"></span>
+        . Your ideal weight is between
+        <span id="BMI-range"></span>.
       </div>
     </div>
     <div class="result">

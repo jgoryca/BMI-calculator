@@ -12,4 +12,9 @@ html {
 
 body {
   box-sizing: border-box;
+  position: relative;
+}
+
+.hidden {
+  display: none;
 }
