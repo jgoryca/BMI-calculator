@@ -46,11 +46,13 @@ formRadio.addEventListener("click", function () {
   imperialWeightLbsValue.value = "";
 
   if (metric.checked) {
-    formMetric.classList.remove("hidden");
+    // formMetric.classList.remove("hidden");
     formImperial.classList.add("hidden");
+    formMetric.style.display = "grid";
   } else if (imperial.checked) {
-    formMetric.classList.add("hidden");
+    // formMetric.classList.add("hidden");
     formImperial.classList.remove("hidden");
+    formMetric.style.display = "none";
   }
 });
 

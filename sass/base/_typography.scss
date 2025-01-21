@@ -30,3 +30,9 @@ body {
   font-weight: 600;
   line-height: 1.1;
 }
+
+p {
+  @media only screen and (min-width: $bp-small) {
+    font-size: 1.7rem;
+  }
+}

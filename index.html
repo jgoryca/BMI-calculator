@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Frontend Mentor | Body Mass Index Calculator</title>
+    <title>Body Mass Index Calculator</title>
     <script defer src="js/script.js"></script>
   </head>
   <body>
@@ -123,20 +123,26 @@
       </form>
 
       <div class="score">
-        <h5 class="heading-s">Your BMI is...</h5>
-        <p id="BMI-score"></p>
-        Your BMI suggests you're
-        <span id="BMI-rate"></span>
-        . Your ideal weight is between
-        <span id="BMI-range"></span>.
+        <div>
+          <h5 class="heading-s">Your BMI is...</h5>
+          <p id="BMI-score"></p>
+        </div>
+        <div>
+          Your BMI suggests you're
+          <span id="BMI-rate"></span>
+          . Your ideal weight is between
+          <span id="BMI-range"></span>.
+        </div>
       </div>
     </div>
     <div class="result">
-      <img
-        src="/assets/images/image-man-eating.webp"
-        alt="Men eating"
-        class="result-photo"
-      />
+      <div>
+        <img
+          src="/assets/images/image-man-eating.webp"
+          alt="Men eating"
+          class="result-photo"
+        />
+      </div>
       <div class="result-text">
         <h2 class="heading-l">What your BMI result means</h2>
         A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
@@ -196,7 +202,7 @@
         </p>
       </div>
       <div class="limitations-content">
-        <div class="limitations-box">
+        <div class="limitations-box limitations-box--1">
           <div class="limitations-box-title">
             <svg class="limitations-icon">
               <use xlink:href="assets/images/sprite.svg#icon-gender"></use>
@@ -209,7 +215,7 @@
             evaluating their BMI.
           </p>
         </div>
-        <div class="limitations-box">
+        <div class="limitations-box limitations-box--2">
           <div class="limitations-box-title">
             <svg class="limitations-icon">
               <use xlink:href="assets/images/sprite.svg#icon-age"></use>
@@ -221,7 +227,7 @@
             BMI to underestimate body fat content.
           </p>
         </div>
-        <div class="limitations-box">
+        <div class="limitations-box limitations-box--3">
           <div class="limitations-box-title">
             <svg class="limitations-icon">
               <use xlink:href="assets/images/sprite.svg#icon-muscle"></use>
@@ -233,7 +239,7 @@
             it doesn't differentiate muscle from fat.
           </p>
         </div>
-        <div class="limitations-box">
+        <div class="limitations-box limitations-box--4">
           <div class="limitations-box-title">
             <svg class="limitations-icon">
               <use xlink:href="assets/images/sprite.svg#icon-pregnancy"></use>
@@ -246,7 +252,7 @@
             health risks for both mother and child.
           </p>
         </div>
-        <div class="limitations-box">
+        <div class="limitations-box limitations-box--5">
           <div class="limitations-box-title">
             <svg class="limitations-icon">
               <use xlink:href="assets/images/sprite.svg#icon-race"></use>

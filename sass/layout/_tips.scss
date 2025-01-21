@@ -14,11 +14,27 @@
     &:last-child {
       margin-bottom: 5.6rem;
     }
+    @media only screen and (min-width: $bp-small) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & .heading-m {
+      @media only screen and (min-width: $bp-small) {
+        // display: block;
+        margin-bottom: 2.4rem;
+      }
+    }
   }
 
   &-icon {
     width: 6.4rem;
     height: 6.4rem;
     display: inline-block;
+
+    @media only screen and (min-width: $bp-small) {
+      width: 10rem;
+      height: 10rem;
+    }
   }
 }

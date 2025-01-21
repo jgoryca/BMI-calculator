@@ -18,9 +18,19 @@ header {
 .heading-xl {
   margin: 2.4rem auto;
   text-align: center;
+
+  @media only screen and (min-width: $bp-small) {
+    // font-size: 50%;
+    max-width: 60vw;
+    margin-top: 4.8rem;
+  }
 }
 
 .heading-box {
   text-align: center;
   margin-bottom: 21.7rem;
+
+  @media only screen and (min-width: $bp-small) {
+    margin-bottom: 29.7rem;
+  }
 }

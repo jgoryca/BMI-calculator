@@ -1,6 +1,6 @@
 .calculator {
   background-color: $color-white;
-  margin: 2.4rem;
+  margin-bottom: 2.4rem;
   padding: 2.4rem;
   border: 1px solid $color-white;
   display: flex;
@@ -10,6 +10,22 @@
   box-shadow: 0 2rem 4rem #d6e6fe;
   position: absolute;
   top: 45rem;
+  right: 5vw;
+  left: 5vw;
+
+  @media only screen and (min-width: $bp-small) {
+    top: 34rem;
+    right: 7vw;
+    left: 7vw;
+    margin-bottom: 5rem;
+  }
+
+  & > .heading-m {
+    align-self: center;
+    @media only screen and (min-width: $bp-small) {
+      align-self: flex-start;
+    }
+  }
 }
 
 .form {
@@ -21,6 +37,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (min-width: $bp-small) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2.4rem;
+    }
+
     &-label {
       font-size: 2rem;
       cursor: pointer;
@@ -67,9 +90,18 @@
   }
 
   &-metric {
+    display: grid;
+
+    @media only screen and (min-width: $bp-small) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2.4rem;
+    }
     &-label {
       display: block;
       margin-bottom: 0.8rem;
+      @media only screen and (min-width: $bp-small) {
+        grid-row: 1/2;
+      }
     }
 
     &-input {
@@ -192,6 +224,14 @@
   padding: 3.2rem;
   border-radius: 10px;
   color: $color-grey-light;
+  @media only screen and (min-width: $bp-small) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.4rem;
+    border-radius: 10px 100px 100px 10px;
+    align-items: center;
+    font-size: 1.6rem;
+  }
 }
 
 #BMI-score {
