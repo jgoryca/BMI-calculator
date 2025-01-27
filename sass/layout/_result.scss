@@ -11,14 +11,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    // grid-gap: 2.4rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    margin: 10.5rem auto 5rem auto;
+    max-width: 80vw;
+    position: relative;
+    grid-gap: 12rem;
+    justify-items: space-between;
   }
 
   &-photo {
     width: 100%;
     @media only screen and (min-width: $bp-small) {
       transform: translateX(-7rem);
-      // max-width: 100%;
+    }
+    @media only screen and (min-width: $bp-large) {
+      transform: translateX(0);
     }
   }
 
@@ -29,7 +38,12 @@
     @media only screen and (min-width: $bp-small) {
       margin-top: 0;
       margin-bottom: 0;
-      // font-size: 1.8rem;
+    }
+    @media only screen and (min-width: $bp-large) {
+      font-size: 1.2rem;
+      align-self: last baseline;
+      padding: 0;
+      margin-bottom: 2.4rem;
     }
 
     & .heading-l {
@@ -37,6 +51,21 @@
       @media only screen and (min-width: $bp-small) {
         font-size: 2.8rem;
       }
+      @media only screen and (min-width: $bp-large) {
+        margin-bottom: 2.4rem;
+        // font-size: 3.2rem;
+      }
     }
+  }
+}
+
+#result-curved-line {
+  display: none;
+  @media only screen and (min-width: $bp-large) {
+    display: block;
+    position: absolute;
+    right: -7rem;
+    top: 0;
+    transform: translateY(-45%);
   }
 }

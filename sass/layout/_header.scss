@@ -6,6 +6,13 @@ header {
   padding: 0 2.4rem;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
+
+  @media only screen and (min-width: $bp-large) {
+    max-width: 70vw;
+    padding-left: 8.8rem;
+    padding-right: 8.8rem;
+    align-items: flex-start;
+  }
 }
 
 .logo {
@@ -13,6 +20,10 @@ header {
   height: 4rem;
   display: inline-block;
   margin-top: 3.2rem;
+
+  @media only screen and (min-width: $bp-large) {
+    margin-top: 7.4rem;
+  }
 }
 
 .heading-xl {
@@ -20,9 +31,16 @@ header {
   text-align: center;
 
   @media only screen and (min-width: $bp-small) {
-    // font-size: 50%;
     max-width: 60vw;
     margin-top: 4.8rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    text-align: start;
+    font-size: 4rem;
+    margin-left: 0;
+    margin-top: 7.75rem;
+    max-width: 60%;
   }
 }
 
@@ -32,5 +50,13 @@ header {
 
   @media only screen and (min-width: $bp-small) {
     margin-bottom: 29.7rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    text-align: start;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+    max-width: 60%;
   }
 }

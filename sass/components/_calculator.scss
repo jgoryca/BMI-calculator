@@ -12,6 +12,7 @@
   top: 45rem;
   right: 5vw;
   left: 5vw;
+  z-index: 10;
 
   @media only screen and (min-width: $bp-small) {
     top: 34rem;
@@ -20,10 +21,23 @@
     margin-bottom: 5rem;
   }
 
+  @media only screen and (min-width: $bp-large) {
+    // width: 56.4rem;
+    // height: 44.8rem;
+    max-width: 60rem;
+    top: 12rem;
+    // left: 73.6rem;
+    left: 50vw;
+  }
+
   & > .heading-m {
     align-self: center;
     @media only screen and (min-width: $bp-small) {
       align-self: flex-start;
+    }
+
+    @media only screen and (min-width: $bp-small) {
+      font-size: 1.6rem;
     }
   }
 }
@@ -49,6 +63,9 @@
       cursor: pointer;
       position: relative;
       padding-left: 4.8rem;
+      @media only screen and (min-width: $bp-large) {
+        font-size: 1.4rem;
+      }
     }
 
     &-button {
@@ -73,6 +90,14 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity 0.2s;
+        @media only screen and (min-width: $bp-large) {
+          width: 0.8rem;
+          height: 0.8rem;
+        }
+      }
+      @media only screen and (min-width: $bp-large) {
+        width: 1.6rem;
+        height: 1.6rem;
       }
     }
 
@@ -102,6 +127,9 @@
       @media only screen and (min-width: $bp-small) {
         grid-row: 1/2;
       }
+      @media only screen and (min-width: $bp-large) {
+        font-size: 1rem;
+      }
     }
 
     &-input {
@@ -113,6 +141,11 @@
       padding: 2rem;
       padding-right: 6rem;
       margin-bottom: 1.6rem;
+
+      @media only screen and (min-width: $bp-large) {
+        height: 4rem;
+        font-size: 2rem;
+      }
     }
   }
 
@@ -120,6 +153,9 @@
     &-label {
       display: block;
       margin-bottom: 0.8rem;
+      @media only screen and (min-width: $bp-large) {
+        font-size: 1rem;
+      }
     }
 
     &-input {
@@ -131,6 +167,10 @@
       padding: 2rem;
       padding-right: 5rem;
       margin-bottom: 1.6rem;
+      @media only screen and (min-width: $bp-large) {
+        height: 4rem;
+        font-size: 2rem;
+      }
     }
 
     &-inputs-row {
@@ -165,6 +205,10 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    top: 0.6rem;
+  }
 }
 
 #label-kg::after {
@@ -176,6 +220,10 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    top: 0.6rem;
+  }
 }
 
 #label-ft::after {
@@ -186,6 +234,10 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    top: 0.6rem;
+  }
 }
 
 #label-in::after {
@@ -196,6 +248,10 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    top: 0.6rem;
+  }
 }
 
 #label-st::after {
@@ -206,6 +262,10 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    top: 0.6rem;
+  }
 }
 
 #label-lbs::after {
@@ -216,6 +276,10 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    top: 0.6rem;
+  }
 }
 
 .score {
@@ -232,6 +296,17 @@
     align-items: center;
     font-size: 1.6rem;
   }
+
+  @media only screen and (min-width: $bp-large) {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  & .heading-s {
+    @media only screen and (min-width: $bp-large) {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 #BMI-score {
@@ -243,4 +318,7 @@
 #BMI-range {
   font-size: 2rem;
   font-weight: 600;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 1.4rem;
+  }
 }
