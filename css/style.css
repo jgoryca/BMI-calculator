@@ -42,10 +42,21 @@ body {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.1; }
+  @media only screen and (min-width: 151.8em) {
+    .heading-s {
+      font-size: 2.8rem; } }
 
 @media only screen and (min-width: 43em) {
   p {
     font-size: 1.7rem; } }
+
+@media only screen and (min-width: 97.5em) {
+  p {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 151.8em) {
+  p {
+    font-size: 2.4rem; } }
 
 .calculator {
   background-color: #fff;
@@ -73,14 +84,31 @@ body {
       max-width: 60rem;
       top: 12rem;
       left: 50vw; } }
+  @media only screen and (min-width: 97.5em) {
+    .calculator {
+      max-width: 80rem;
+      padding: 3.2rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .calculator {
+      max-width: 90rem;
+      padding: 4.8rem;
+      top: 16rem; } }
   .calculator > .heading-m {
     align-self: center; }
     @media only screen and (min-width: 43em) {
       .calculator > .heading-m {
         align-self: flex-start; } }
-    @media only screen and (min-width: 43em) {
+    @media only screen and (min-width: 62.5em) {
       .calculator > .heading-m {
         font-size: 1.6rem; } }
+    @media only screen and (min-width: 97.5em) {
+      .calculator > .heading-m {
+        font-size: 3.2rem;
+        margin-bottom: 2.4rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .calculator > .heading-m {
+        font-size: 4rem;
+        margin-bottom: 3.2rem; } }
 
 .form {
   display: flex;
@@ -95,6 +123,9 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2.4rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .form-radio {
+        margin-bottom: 3.2rem; } }
     .form-radio-label {
       font-size: 2rem;
       cursor: pointer;
@@ -103,6 +134,12 @@ body {
       @media only screen and (min-width: 62.5em) {
         .form-radio-label {
           font-size: 1.4rem; } }
+      @media only screen and (min-width: 97.5em) {
+        .form-radio-label {
+          font-size: 2.4rem; } }
+      @media only screen and (min-width: 151.8em) {
+        .form-radio-label {
+          font-size: 3.2rem; } }
     .form-radio-button {
       display: inline-block;
       width: 2.5rem;
@@ -129,10 +166,27 @@ body {
           .form-radio-button::after {
             width: 0.8rem;
             height: 0.8rem; } }
+        @media only screen and (min-width: 97.5em) {
+          .form-radio-button::after {
+            width: 1.2rem;
+            height: 1.2rem; } }
+        @media only screen and (min-width: 151.8em) {
+          .form-radio-button::after {
+            width: 1.6rem;
+            height: 1.6rem; } }
       @media only screen and (min-width: 62.5em) {
         .form-radio-button {
           width: 1.6rem;
           height: 1.6rem; } }
+      @media only screen and (min-width: 97.5em) {
+        .form-radio-button {
+          width: 2.4rem;
+          height: 2.4rem; } }
+      @media only screen and (min-width: 151.8em) {
+        .form-radio-button {
+          width: 3.2rem;
+          height: 3.2rem;
+          top: 0.1rem; } }
     .form-radio-input {
       display: none; }
     .form-radio-input:checked ~ .form-radio-label .form-radio-button {
@@ -145,6 +199,12 @@ body {
       .form-metric {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2.4rem; } }
+    @media only screen and (min-width: 97.5em) {
+      .form-metric {
+        margin-bottom: 2.4rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .form-metric {
+        margin-bottom: 3.2rem; } }
     .form-metric-label {
       display: block;
       margin-bottom: 0.8rem; }
@@ -154,6 +214,12 @@ body {
       @media only screen and (min-width: 62.5em) {
         .form-metric-label {
           font-size: 1rem; } }
+      @media only screen and (min-width: 97.5em) {
+        .form-metric-label {
+          font-size: 1.6rem; } }
+      @media only screen and (min-width: 151.8em) {
+        .form-metric-label {
+          font-size: 2.4rem; } }
     .form-metric-input {
       display: block;
       width: 100%;
@@ -167,12 +233,32 @@ body {
         .form-metric-input {
           height: 4rem;
           font-size: 2rem; } }
+      @media only screen and (min-width: 97.5em) {
+        .form-metric-input {
+          height: 6.5rem;
+          font-size: 2.4rem; } }
+      @media only screen and (min-width: 151.8em) {
+        .form-metric-input {
+          height: 7rem;
+          font-size: 3.2rem; } }
+  @media only screen and (min-width: 97.5em) {
+    .form-imperial {
+      margin-bottom: 2.4rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .form-imperial {
+      margin-bottom: 3.2rem; } }
   .form-imperial-label {
     display: block;
     margin-bottom: 0.8rem; }
     @media only screen and (min-width: 62.5em) {
       .form-imperial-label {
         font-size: 1rem; } }
+    @media only screen and (min-width: 97.5em) {
+      .form-imperial-label {
+        font-size: 1.6rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .form-imperial-label {
+        font-size: 2.4rem; } }
   .form-imperial-input {
     display: block;
     width: 100%;
@@ -186,6 +272,14 @@ body {
       .form-imperial-input {
         height: 4rem;
         font-size: 2rem; } }
+    @media only screen and (min-width: 97.5em) {
+      .form-imperial-input {
+        height: 6.5rem;
+        font-size: 2.4rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .form-imperial-input {
+        height: 7rem;
+        font-size: 3.2rem; } }
   .form-imperial-inputs-row {
     display: flex;
     justify-content: space-between; }
@@ -217,6 +311,14 @@ body {
     #label-cm::after {
       font-size: 2rem;
       top: 0.6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #label-cm::after {
+      font-size: 2.4rem;
+      top: 1.6rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #label-cm::after {
+      font-size: 3.2rem;
+      top: 1.1rem; } }
 
 #label-kg::after {
   content: "kg";
@@ -231,6 +333,14 @@ body {
     #label-kg::after {
       font-size: 2rem;
       top: 0.6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #label-kg::after {
+      font-size: 2.4rem;
+      top: 1.6rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #label-kg::after {
+      font-size: 3.2rem;
+      top: 1.1rem; } }
 
 #label-ft::after {
   content: "ft";
@@ -244,6 +354,14 @@ body {
     #label-ft::after {
       font-size: 2rem;
       top: 0.6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #label-ft::after {
+      font-size: 2.4rem;
+      top: 1.6rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #label-ft::after {
+      font-size: 3.2rem;
+      top: 1.1rem; } }
 
 #label-in::after {
   content: "in";
@@ -257,6 +375,14 @@ body {
     #label-in::after {
       font-size: 2rem;
       top: 0.6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #label-in::after {
+      font-size: 2.4rem;
+      top: 1.6rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #label-in::after {
+      font-size: 3.2rem;
+      top: 1.1rem; } }
 
 #label-st::after {
   content: "st";
@@ -270,6 +396,14 @@ body {
     #label-st::after {
       font-size: 2rem;
       top: 0.6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #label-st::after {
+      font-size: 2.4rem;
+      top: 1.6rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #label-st::after {
+      font-size: 3.2rem;
+      top: 1.1rem; } }
 
 #label-lbs::after {
   content: "lbs";
@@ -283,6 +417,14 @@ body {
     #label-lbs::after {
       font-size: 2rem;
       top: 0.6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #label-lbs::after {
+      font-size: 2.4rem;
+      top: 1.6rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #label-lbs::after {
+      font-size: 3.2rem;
+      top: 1.1rem; } }
 
 .score {
   background-color: #345ff6;
@@ -302,14 +444,31 @@ body {
     .score {
       padding: 2rem;
       font-size: 1.2rem; } }
+  @media only screen and (min-width: 77.5em) {
+    .score {
+      font-size: 2rem;
+      padding: 2.4rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .score {
+      padding: 3.2rem; } }
   @media only screen and (min-width: 62.5em) {
     .score .heading-s {
-      font-size: 1.6rem; } }
+      font-size: 2.4rem; } }
+
+#BMI-intro {
+  display: block;
+  grid-column: 1 / -1; }
 
 #BMI-score {
   display: block;
   font-size: 4.8rem;
   font-weight: 600; }
+  @media only screen and (min-width: 62.5em) {
+    #BMI-score {
+      font-size: 6.4rem; } }
+
+#BMI-text {
+  display: none; }
 
 #BMI-range {
   font-size: 2rem;
@@ -317,6 +476,9 @@ body {
   @media only screen and (min-width: 62.5em) {
     #BMI-range {
       font-size: 1.4rem; } }
+  @media only screen and (min-width: 62.5em) {
+    #BMI-range {
+      font-size: 2.2rem; } }
 
 header {
   background-image: linear-gradient(to right bottom, #fff 15%, #d6e6fe);
@@ -341,6 +503,18 @@ header {
   @media only screen and (min-width: 62.5em) {
     .logo {
       margin-top: 7.4rem; } }
+  @media only screen and (min-width: 77.5em) {
+    .logo {
+      width: 6rem;
+      height: 6rem; } }
+  @media only screen and (min-width: 97.5em) {
+    .logo {
+      width: 8rem;
+      height: 8rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .logo {
+      width: 12rem;
+      height: 12rem; } }
 
 .heading-xl {
   margin: 2.4rem auto;
@@ -356,6 +530,12 @@ header {
       margin-left: 0;
       margin-top: 7.75rem;
       max-width: 60%; } }
+  @media only screen and (min-width: 97.5em) {
+    .heading-xl {
+      font-size: 6.4rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .heading-xl {
+      font-size: 8rem; } }
 
 .heading-box {
   text-align: center;
@@ -370,6 +550,13 @@ header {
       margin-top: 2rem;
       margin-bottom: 9rem;
       max-width: 60%; } }
+  @media only screen and (min-width: 97.5em) {
+    .heading-box {
+      font-size: 2.4rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .heading-box {
+      font-size: 3.2rem;
+      margin-bottom: 15rem; } }
 
 .limitations {
   max-width: 100vw;
@@ -389,6 +576,10 @@ header {
       grid-template-columns: repeat(12, 1fr);
       align-items: center;
       position: relative; } }
+  @media only screen and (min-width: 151.8em) {
+    .limitations {
+      margin: 15rem auto 15rem auto;
+      grid-gap: 8rem; } }
   .limitations-intro {
     text-align: center;
     margin-top: 7.2rem;
@@ -404,8 +595,17 @@ header {
         margin-bottom: 0; } }
     .limitations-intro .heading-l {
       margin-bottom: 3.2rem; }
+      @media only screen and (min-width: 151.8em) {
+        .limitations-intro .heading-l {
+          font-size: 4.8rem; } }
     .limitations-intro p {
       font-size: 1.4rem; }
+      @media only screen and (min-width: 97.5em) {
+        .limitations-intro p {
+          font-size: 2rem; } }
+      @media only screen and (min-width: 151.8em) {
+        .limitations-intro p {
+          font-size: 2.4rem; } }
   .limitations-box {
     padding: 2.4rem;
     border-radius: 1rem;
@@ -427,6 +627,12 @@ header {
     @media only screen and (min-width: 62.5em) {
       .limitations-box > p {
         font-size: 1.4rem; } }
+    @media only screen and (min-width: 97.5em) {
+      .limitations-box > p {
+        font-size: 2rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .limitations-box > p {
+        font-size: 2.4rem; } }
     @media only screen and (min-width: 43em) {
       .limitations-box--1 {
         grid-column: 1/3; } }
@@ -460,6 +666,10 @@ header {
   .limitations-icon {
     width: 3.2rem;
     height: 3.2rem; }
+    @media only screen and (min-width: 151.8em) {
+      .limitations-icon {
+        width: 3.6rem;
+        height: 3.6rem; } }
 
 #limitations-curved-line {
   display: none; }
@@ -470,6 +680,22 @@ header {
       width: 10rem;
       top: 24rem;
       left: 12rem; } }
+  @media only screen and (min-width: 77.5em) {
+    #limitations-curved-line {
+      width: 8rem;
+      height: 16rem;
+      top: 20rem;
+      left: 20rem; } }
+  @media only screen and (min-width: 97.5em) {
+    #limitations-curved-line {
+      top: 23rem;
+      left: 28rem; } }
+  @media only screen and (min-width: 151.8em) {
+    #limitations-curved-line {
+      width: 16rem;
+      height: 32rem;
+      top: 20rem;
+      left: 40rem; } }
 
 .result {
   display: flex;
@@ -488,8 +714,12 @@ header {
       margin: 10.5rem auto 5rem auto;
       max-width: 80vw;
       position: relative;
-      grid-gap: 12rem;
+      grid-gap: 8rem;
       justify-items: space-between; } }
+  @media only screen and (min-width: 151.8em) {
+    .result {
+      grid-gap: 16rem;
+      margin-bottom: 10rem; } }
   .result-photo {
     width: 100%; }
     @media only screen and (min-width: 43em) {
@@ -510,8 +740,22 @@ header {
       .result-text {
         font-size: 1.2rem;
         align-self: last baseline;
-        padding: 0;
+        padding: 1.2rem;
         margin-bottom: 2.4rem; } }
+    @media only screen and (min-width: 77.5em) {
+      .result-text {
+        font-size: 1.4rem;
+        margin-bottom: 4.8rem; } }
+    @media only screen and (min-width: 97.5em) {
+      .result-text {
+        font-size: 2rem;
+        margin-bottom: 4.8rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .result-text {
+        font-size: 2.4rem;
+        margin-top: 28rem;
+        margin-bottom: 3.2rem;
+        align-self: center; } }
     .result-text .heading-l {
       margin-bottom: 3.2rem; }
       @media only screen and (min-width: 43em) {
@@ -520,6 +764,15 @@ header {
       @media only screen and (min-width: 62.5em) {
         .result-text .heading-l {
           margin-bottom: 2.4rem; } }
+      @media only screen and (min-width: 77.5em) {
+        .result-text .heading-l {
+          font-size: 2.8rem; } }
+      @media only screen and (min-width: 97.5em) {
+        .result-text .heading-l {
+          font-size: 4.8rem; } }
+      @media only screen and (min-width: 151.8em) {
+        .result-text .heading-l {
+          font-size: 6.4rem; } }
 
 #result-curved-line {
   display: none; }
@@ -530,6 +783,32 @@ header {
       right: -7rem;
       top: 0;
       transform: translateY(-45%); } }
+  @media only screen and (min-width: 77.5em) {
+    #result-curved-line {
+      width: 8rem;
+      height: 16rem;
+      right: 10rem;
+      top: 0;
+      transform: translateY(-10%); } }
+  @media only screen and (min-width: 97.5em) {
+    #result-curved-line {
+      right: 10rem;
+      top: 0;
+      transform: translateY(-30%); } }
+  @media only screen and (min-width: 125em) {
+    #result-curved-line {
+      width: 12rem;
+      height: 24rem;
+      right: 20rem;
+      top: 0;
+      transform: translateY(25%); } }
+  @media only screen and (min-width: 151.8em) {
+    #result-curved-line {
+      width: 16rem;
+      height: 32rem;
+      right: 27rem;
+      top: 0;
+      transform: translateY(0); } }
 
 .tips {
   background-image: linear-gradient(to right, #fff 10%, #eff6f9);
@@ -543,6 +822,14 @@ header {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 3rem; } }
+  @media only screen and (min-width: 77.5em) {
+    .tips {
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem; } }
+  @media only screen and (min-width: 151.8em) {
+    .tips {
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem; } }
   .tips-box {
     display: flex;
     flex-direction: column;
@@ -562,6 +849,9 @@ header {
     @media only screen and (min-width: 43em) {
       .tips-box .heading-m {
         margin-bottom: 2.4rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .tips-box .heading-m {
+        font-size: 3.2rem; } }
   .tips-icon {
     width: 6.4rem;
     height: 6.4rem;
@@ -574,3 +864,7 @@ header {
       .tips-icon {
         width: 4.8rem;
         height: 4.8rem; } }
+    @media only screen and (min-width: 151.8em) {
+      .tips-icon {
+        width: 8rem;
+        height: 8rem; } }

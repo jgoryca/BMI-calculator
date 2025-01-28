@@ -7,7 +7,7 @@ header {
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
 
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     max-width: 70vw;
     padding-left: 8.8rem;
     padding-right: 8.8rem;
@@ -21,8 +21,23 @@ header {
   display: inline-block;
   margin-top: 3.2rem;
 
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     margin-top: 7.4rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    width: 12rem;
+    height: 12rem;
   }
 }
 
@@ -35,12 +50,20 @@ header {
     margin-top: 4.8rem;
   }
 
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     text-align: start;
     font-size: 4rem;
     margin-left: 0;
     margin-top: 7.75rem;
     max-width: 60%;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 6.4rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 8rem;
   }
 }
 
@@ -52,11 +75,20 @@ header {
     margin-bottom: 29.7rem;
   }
 
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     text-align: start;
     font-size: 1.4rem;
     margin-top: 2rem;
     margin-bottom: 9rem;
     max-width: 60%;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    margin-bottom: 15rem;
   }
 }

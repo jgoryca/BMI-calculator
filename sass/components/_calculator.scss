@@ -21,13 +21,22 @@
     margin-bottom: 5rem;
   }
 
-  @media only screen and (min-width: $bp-large) {
-    // width: 56.4rem;
-    // height: 44.8rem;
+  @media only screen and (min-width: $bp-medium) {
     max-width: 60rem;
     top: 12rem;
-    // left: 73.6rem;
     left: 50vw;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    max-width: 80rem;
+    padding: 3.2rem;
+    // top: 16rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    max-width: 90rem;
+    padding: 4.8rem;
+    top: 16rem;
   }
 
   & > .heading-m {
@@ -36,8 +45,18 @@
       align-self: flex-start;
     }
 
-    @media only screen and (min-width: $bp-small) {
+    @media only screen and (min-width: $bp-medium) {
       font-size: 1.6rem;
+    }
+
+    @media only screen and (min-width: $bp-xlarge) {
+      font-size: 3.2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+      font-size: 4rem;
+      margin-bottom: 3.2rem;
     }
   }
 }
@@ -58,13 +77,25 @@
       grid-gap: 2.4rem;
     }
 
+    @media only screen and (min-width: $bp-largest) {
+      margin-bottom: 3.2rem;
+    }
+
     &-label {
       font-size: 2rem;
       cursor: pointer;
       position: relative;
       padding-left: 4.8rem;
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         font-size: 1.4rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        font-size: 3.2rem;
       }
     }
 
@@ -90,14 +121,35 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity 0.2s;
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-medium) {
           width: 0.8rem;
           height: 0.8rem;
         }
+
+        @media only screen and (min-width: $bp-xlarge) {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+
+        @media only screen and (min-width: $bp-largest) {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
       }
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         width: 1.6rem;
         height: 1.6rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        width: 3.2rem;
+        height: 3.2rem;
+        top: 0.1rem;
       }
     }
 
@@ -121,14 +173,30 @@
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 2.4rem;
     }
+
+    @media only screen and (min-width: $bp-xlarge) {
+      margin-bottom: 2.4rem;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+      margin-bottom: 3.2rem;
+    }
     &-label {
       display: block;
       margin-bottom: 0.8rem;
       @media only screen and (min-width: $bp-small) {
         grid-row: 1/2;
       }
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         font-size: 1rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        font-size: 2.4rem;
       }
     }
 
@@ -142,19 +210,44 @@
       padding-right: 6rem;
       margin-bottom: 1.6rem;
 
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         height: 4rem;
         font-size: 2rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        height: 6.5rem;
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        height: 7rem;
+        font-size: 3.2rem;
       }
     }
   }
 
   &-imperial {
+    @media only screen and (min-width: $bp-xlarge) {
+      margin-bottom: 2.4rem;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+      margin-bottom: 3.2rem;
+    }
     &-label {
       display: block;
       margin-bottom: 0.8rem;
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         font-size: 1rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        font-size: 2.4rem;
       }
     }
 
@@ -167,9 +260,19 @@
       padding: 2rem;
       padding-right: 5rem;
       margin-bottom: 1.6rem;
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         height: 4rem;
         font-size: 2rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        height: 6.5rem;
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        height: 7rem;
+        font-size: 3.2rem;
       }
     }
 
@@ -205,9 +308,19 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
     top: 0.6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+    top: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    top: 1.1rem;
   }
 }
 
@@ -220,9 +333,19 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
     top: 0.6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+    top: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    top: 1.1rem;
   }
 }
 
@@ -234,9 +357,19 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
     top: 0.6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+    top: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    top: 1.1rem;
   }
 }
 
@@ -248,9 +381,19 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
     top: 0.6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+    top: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    top: 1.1rem;
   }
 }
 
@@ -262,9 +405,19 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
     top: 0.6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+    top: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    top: 1.1rem;
   }
 }
 
@@ -276,9 +429,19 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: $color-blue;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
     top: 0.6rem;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 2.4rem;
+    top: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 3.2rem;
+    top: 1.1rem;
   }
 }
 
@@ -297,28 +460,54 @@
     font-size: 1.6rem;
   }
 
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     padding: 2rem;
     font-size: 1.2rem;
   }
 
+  @media only screen and (min-width: $bp-large) {
+    font-size: 2rem;
+    padding: 2.4rem;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    padding: 3.2rem;
+  }
+
   & .heading-s {
-    @media only screen and (min-width: $bp-large) {
-      font-size: 1.6rem;
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 2.4rem;
     }
   }
+}
+
+#BMI-intro {
+  display: block;
+  grid-column: 1 / -1;
 }
 
 #BMI-score {
   display: block;
   font-size: 4.8rem;
   font-weight: 600;
+
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 6.4rem;
+  }
+}
+
+#BMI-text {
+  display: none;
 }
 
 #BMI-range {
   font-size: 2rem;
   font-weight: 600;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     font-size: 1.4rem;
+  }
+
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 2.2rem;
   }
 }

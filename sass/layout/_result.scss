@@ -13,12 +13,17 @@
     align-items: center;
   }
 
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     margin: 10.5rem auto 5rem auto;
     max-width: 80vw;
     position: relative;
-    grid-gap: 12rem;
+    grid-gap: 8rem;
     justify-items: space-between;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    grid-gap: 16rem;
+    margin-bottom: 10rem;
   }
 
   &-photo {
@@ -26,7 +31,7 @@
     @media only screen and (min-width: $bp-small) {
       transform: translateX(-7rem);
     }
-    @media only screen and (min-width: $bp-large) {
+    @media only screen and (min-width: $bp-medium) {
       transform: translateX(0);
     }
   }
@@ -39,11 +44,28 @@
       margin-top: 0;
       margin-bottom: 0;
     }
-    @media only screen and (min-width: $bp-large) {
+    @media only screen and (min-width: $bp-medium) {
       font-size: 1.2rem;
       align-self: last baseline;
-      padding: 0;
+      padding: 1.2rem;
       margin-bottom: 2.4rem;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+      font-size: 1.4rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @media only screen and (min-width: $bp-xlarge) {
+      font-size: 2rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+      font-size: 2.4rem;
+      margin-top: 28rem;
+      margin-bottom: 3.2rem;
+      align-self: center;
     }
 
     & .heading-l {
@@ -51,9 +73,20 @@
       @media only screen and (min-width: $bp-small) {
         font-size: 2.8rem;
       }
-      @media only screen and (min-width: $bp-large) {
+      @media only screen and (min-width: $bp-medium) {
         margin-bottom: 2.4rem;
-        // font-size: 3.2rem;
+      }
+
+      @media only screen and (min-width: $bp-large) {
+        font-size: 2.8rem;
+      }
+
+      @media only screen and (min-width: $bp-xlarge) {
+        font-size: 4.8rem;
+      }
+
+      @media only screen and (min-width: $bp-largest) {
+        font-size: 6.4rem;
       }
     }
   }
@@ -61,11 +94,42 @@
 
 #result-curved-line {
   display: none;
-  @media only screen and (min-width: $bp-large) {
+  @media only screen and (min-width: $bp-medium) {
     display: block;
     position: absolute;
     right: -7rem;
     top: 0;
     transform: translateY(-45%);
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    // display: none;
+    width: 8rem;
+    height: 16rem;
+    right: 10rem;
+    top: 0;
+    transform: translateY(-10%);
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    right: 10rem;
+    top: 0;
+    transform: translateY(-30%);
+  }
+
+  @media only screen and (min-width: $bp-xxlarge) {
+    width: 12rem;
+    height: 24rem;
+    right: 20rem;
+    top: 0;
+    transform: translateY(25%);
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    width: 16rem;
+    height: 32rem;
+    right: 27rem;
+    top: 0;
+    transform: translateY(0);
   }
 }

@@ -14,9 +14,12 @@ const imperialHeightInValue = document.getElementById("imperial-height-in");
 const imperialWeightStValue = document.getElementById("imperial-weight-st");
 const imperialWeightLbsValue = document.getElementById("imperial-weight-lbs");
 
+const BMIheading = document.getElementById("BMI-heading");
 const BMIscore = document.getElementById("BMI-score");
 const BMIrate = document.getElementById("BMI-rate");
 const BMIrange = document.getElementById("BMI-range");
+const BMItext = document.getElementById("BMI-text");
+const BMIintro = document.getElementById("BMI-intro");
 
 const calculateMetricBMI = function (height, weight) {
   return weight / (height / 100) ** 2;
@@ -27,6 +30,9 @@ const calculateImperialBMI = function (height, weight) {
 };
 
 const renderBMIScore = function (score) {
+  BMIintro.style.display = "none";
+  BMItext.style.display = "block";
+  BMIheading.textContent = "Your BMI is...";
   BMIscore.textContent = `${score.toFixed(1)}`;
   if (score <= 18.49) BMIrate.textContent = "underweight";
   else if (score >= 24.99) BMIrate.textContent = "overweight";
@@ -44,13 +50,15 @@ formRadio.addEventListener("click", function () {
   imperialHeightInValue.value = "";
   imperialWeightStValue.value = "";
   imperialWeightLbsValue.value = "";
+  BMIintro.style.display = "block";
+  BMItext.style.display = "none";
+  BMIheading.textContent = "Welcome";
+  BMIscore.textContent = "";
 
   if (metric.checked) {
-    // formMetric.classList.remove("hidden");
     formImperial.classList.add("hidden");
     formMetric.style.display = "grid";
   } else if (imperial.checked) {
-    // formMetric.classList.add("hidden");
     formImperial.classList.remove("hidden");
     formMetric.style.display = "none";
   }
@@ -84,6 +92,7 @@ document.addEventListener("input", function () {
     const idealWeightMin = 18.5 * (height / 100) ** 2;
     const idealWeightMax = 24.9 * (height / 100) ** 2;
     renderBMIScore(score);
+
     BMIrange.textContent = `${idealWeightMin.toFixed()}kgs - ${idealWeightMax.toFixed()}kgs`;
   }
 
